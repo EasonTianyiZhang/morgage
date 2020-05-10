@@ -16,15 +16,15 @@ print('year'
 for x in range(30):
 	year = x+1
 
-	# Assume every cost is increased by 5% per year.
-	insurance = initial_house_value * 0.0022 * 1.005
-	property_tax = initial_house_value * 0.012 * 1.005
-	hoa = 350 * 12 * 1.005
+	# Assume every cost is increased by 3% per year.
+	insurance = initial_house_value * 0.0022 * 1.03
+	property_tax = initial_house_value * 0.012 * 1.03
+	hoa = 350 * 12 * 1.03
 	# Interest set to 3%
 	interest = principle * 0.03
 
 	# Monthly payment times 12 months.
-	payment = 4942*12
+	payment = 4965*12
 	contributed_to_principle = payment - insurance - property_tax - hoa - interest
 	# Prinicple means the remaining of the principle. 
 	principle = principle - contributed_to_principle
